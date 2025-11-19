@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="icon" href="../Images/Logo.ico" sizes="32x32">
+    <link rel="stylesheet" href="../CSS/style1.css"> 
+    <link rel="stylesheet" href="../CSS/style5.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="../Inicio/Index.html">
+                <img class="logo" src="../Images/Logo.png" alt="Logo do Site">
+            </a>
+        </div>
+
+        <ul class="navbar-menu">
+            <li><a href="../Inicio/Index.html">Início</a></li>
+            <li><a href="../Sobre/index.html">Sobre</a></li>
+            <li><a href="../Recursos/index.html">Recursos</a></li>
+            <li><a href="../Acolhimento/index.html">Acolhimento</a></li>
+            <li><a href="../Contato/index.html" class="ativo">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="main-container-contato">
+        <div class="contato-box">
+            
+            <h2>Fale Conosco</h2>
+            <p class="subtitulo">Tem dúvidas, sugestões ou quer colaborar com nosso projeto? Envie uma mensagem!</p>
+
+            <form action="#" method="POST" class="form-contato">
+                
+                <label for="nome">Seu Nome (Opcional):</label>
+                <input type="text" id="nome" name="nome" placeholder="Ex: Maria Silva">
+
+                <label for="email">Seu Melhor E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="nome@exemplo.com" required>
+
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" placeholder="Ex: Parceria ou Sugestão" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem detalhada..." required></textarea>
+
+                <button type="submit" class="botao-enviar">Enviar Mensagem</button>
+            </form>
+
+            <hr class="divisor-contato">
+
+            <div class="outros-contatos">
+                <h3>Outras Formas</h3>
+                <p>📧 <b>E-mail:</b> <a href="mailto:contato@vozessilenciadas.com.br">contato@vozessilenciadas.com.br</a></p>
+            </div>
+            
+            <div class="redes-sociais">
+                <h3>Redes Sociais</h3>
+                <a href="https://www.instagram.com/vozessilenciadassp/" target="_blank" class="social-icon">Instagram</a>
+                <a href="https://www.facebook.com/vozessilenciadassp/" target="_blank" class="social-icon">Facebook</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

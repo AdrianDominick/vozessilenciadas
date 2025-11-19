@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denúncia Anônima</title>
+    <link rel="icon" href="../Images/Logo.ico" sizes="32x32">
+    <link rel="stylesheet" href="../CSS/style1.css">
+    <link rel="stylesheet" href="../CSS/style6.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="../Inicio/Index.html">
+                <img class="logo" src="../Images/Logo.png" alt="Logo do Site">
+            </a>
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="../Inicio/Index.html">Início</a></li>
+            <li><a href="../Sobre/index.html">Sobre</a></li>
+            <li><a href="../Recursos/index.html">Recursos</a></li>
+            <li><a href="../Acolhimento/index.html">Acolhimento</a></li>
+            <li><a href="../Contato/index.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-container">
+        <div class="form-box">
+            <h2>Canal de Denúncia Anônima</h2>
+            
+            <div class="aviso-anonimato">
+                <p>🔒 <strong>Sua identidade está protegida.</strong> Não armazenamos seu IP ou dados pessoais neste formulário.</p>
+            </div>
+
+            <form action="#" method="POST"> <label for="tipo">Tipo de Ocorrência:</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="" disabled selected>Selecione uma opção</option>
+                    <option value="bullying">Bullying</option>
+                    <option value="assedio">Assédio</option>
+                    <option value="discriminacao">Discriminação / Preconceito</option>
+                    <option value="agressao">Agressão Física ou Verbal</option>
+                    <option value="outros">Outros</option>
+                </select>
+
+                <label for="data">Data do Ocorrido (Aproximada):</label>
+                <input type="date" id="data" name="data">
+
+                <label for="relato">Descreva o que aconteceu:</label>
+                <textarea id="relato" name="relato" rows="6" placeholder="Dê o máximo de detalhes possível (local, envolvidos, horário)..." required></textarea>
+
+                <label for="evidencia">Anexar Prova (Foto/Print) - Opcional:</label>
+                <input type="file" id="evidencia" name="evidencia">
+
+                <button type="submit" class="botao-enviar">Enviar Denúncia</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

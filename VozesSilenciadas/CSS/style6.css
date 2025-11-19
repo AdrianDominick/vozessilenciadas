@@ -1,0 +1,114 @@
+/* --- Estilos Específicos do Formulário --- */
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 80vh; /* Garante que ocupe boa parte da tela */
+}
+
+.form-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px; /* Largura máxima do formulário */
+    font-family: calibri, sans-serif;
+}
+
+.form-box h2 {
+    color: #b300ff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Aviso de segurança */
+.aviso-anonimato {
+    background-color: #f0f0f0;
+    border-left: 5px solid #b300ff;
+    padding: 10px 15px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Estilo dos Inputs */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="date"],
+form select,
+form textarea,
+form input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box; /* Importante para não quebrar o layout */
+    font-family: calibri, sans-serif;
+    font-size: 16px;
+}
+
+form textarea {
+    resize: vertical; /* Permite o usuário aumentar a altura da caixa de texto */
+}
+
+/* Botão de Enviar */
+.botao-enviar {
+    width: 100%;
+    padding: 15px;
+    background-color: #b300ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.botao-enviar:hover {
+    background-color: #8000b3;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    
+    .navbar-logo {
+        position: static;
+        order: -1;
+        margin-bottom: 15px;
+        align-self: flex-start;
+    }
+    
+    .navbar-logo img {
+        height: 60px;
+        width: 60px;
+    }
+    
+    .navbar-menu {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .navbar-menu li:not(:last-child)::after {
+        display: none;
+    }
+    
+    .navbar a {
+        font-size: 16px;
+        padding: 8px 10px;
+    }
+}

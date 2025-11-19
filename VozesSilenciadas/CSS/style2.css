@@ -1,0 +1,180 @@
+body {
+    background: linear-gradient(to left, #ffffff, #f8e7ff, #e4b3ff);
+    margin: 0;
+    font-family: calibri, sans-serif;
+}
+
+.navbar {
+    background-color: #b300ff;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.navbar-logo { position: absolute; right: 25px; }
+.logo { width: 100px; height: 100px; }
+.navbar-logo img { height: 80px; width: auto; }
+.navbar ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 25px; }
+.navbar-menu li { display: flex; align-items: center; }
+.navbar-menu li:not(:last-child)::after { content: ""; height: 20px; width: 2px; background-color: white; margin-left: 20px; }
+.navbar a { color: white; text-decoration: none; font-size: 22px; font-weight: bold; }
+
+.navbar-menu a.ativo {
+    background-color: white;
+    color: #b300ff;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.sobre-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.sobre-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.texto-intro {
+    flex: 1;
+}
+
+.texto-intro h1 {
+    color: #b300ff;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.texto-intro p {
+    font-size: 20px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.img-intro {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.img-intro img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.divisor {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #b300ff, transparent);
+    margin: 40px 0;
+}
+
+.nossa-missao h2 {
+    text-align: center;
+    color: #7a00b3;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.cards-valores {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.valor-item {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.valor-item:hover {
+    background-color: white;
+    border-color: #b300ff;
+    transform: translateY(-5px);
+}
+
+.valor-item h3 {
+    color: #b300ff;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.valor-item p {
+    font-size: 18px;
+    color: #555;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    
+    .navbar-logo {
+        position: static;
+        order: -1;
+        margin-bottom: 15px;
+        align-self: flex-start;
+    }
+    
+    .navbar-logo img {
+        height: 60px;
+        width: 60px;
+    }
+    
+    .navbar-menu {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .navbar-menu li:not(:last-child)::after {
+        display: none;
+    }
+    
+    .navbar a {
+        font-size: 16px;
+        padding: 8px 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sobre-intro {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .sobre-container {
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+
+    .texto-intro h1 {
+        font-size: 32px;
+    }
+    
+    .cards-valores {
+        justify-content: center;
+    }
+    
+    .valor-item {
+        min-width: 90%;
+    }
+}

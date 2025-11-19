@@ -1,0 +1,162 @@
+body {
+    background: linear-gradient(to left, #ffffff, #f8e7ff, #e4b3ff);
+    margin: 0;
+    font-family: calibri, sans-serif;
+}
+
+.navbar {
+    background-color: #b300ff;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.navbar-logo { position: absolute; right: 25px; }
+.logo { width: 100px; height: 100px; }
+.navbar-logo img { height: 80px; width: auto; }
+.navbar ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 25px; }
+.navbar-menu li { display: flex; align-items: center; }
+.navbar-menu li:not(:last-child)::after { content: ""; height: 20px; width: 2px; background-color: white; margin-left: 20px; }
+.navbar a { color: white; text-decoration: none; font-size: 22px; font-weight: bold; font-family: calibri; }
+
+
+.container-acolhimento {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.intro-acolhimento h1 {
+    color: #7a00b3;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.intro-acolhimento p {
+    font-size: 20px;
+    color: #444;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    line-height: 1.5;
+}
+
+.grid-opcoes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    width: 280px;
+    box-shadow: 0 8px 20px rgba(179, 0, 255, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(179, 0, 255, 0.25);
+}
+
+.icone {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #b300ff;
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.card p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.botao-card {
+    background-color: #b300ff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.botao-card:hover {
+    background-color: #8c00c7;
+}
+
+.navbar-menu a.ativo {
+    background-color: white;
+    color: #b300ff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+.navbar-menu a.ativo:hover {
+    background-color: #f0f0f0;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    
+    .navbar-logo {
+        position: static;
+        order: -1;
+        margin-bottom: 15px;
+        align-self: flex-start;
+    }
+    
+    .navbar-logo img {
+        height: 60px;
+        width: 60px;
+    }
+    
+    .navbar-menu {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .navbar-menu li:not(:last-child)::after {
+        display: none;
+    }
+    
+    .navbar a {
+        font-size: 16px;
+        padding: 8px 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contato-box, .contato-box, .contato-form {
+        max-width: 95%; 
+        padding: 20px;
+    }
+    
+    .grid-opcoes {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .card {
+        width: 100%;
+    }
+}
